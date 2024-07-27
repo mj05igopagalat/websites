@@ -1,60 +1,75 @@
-body{
-    display: inline-block;
-    justify-content: space-around;
-}
-.main{
+/* style.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .main {
     max-width: 800px;
     margin: 40px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
-    margin: 20px;
-    background-color: #f7f7f7;
-    padding: 150px;
-    max-width: 10px;
+    padding: 20px;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section p {
-    margin-bottom: 10px; 
-    text-align: center; 
+  }
+  button{
+    width: 200px;
+    height: 25px;
+  }
+  
+  /* Typography */
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
     font-size: 18px;
-    font-weight: bold; 
-    color: #333; 
-}
-.d{
-    background-color: #4CAF50;
-    color: #fff;
-    position: relative;
-    top: 100px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.p{
-    background-color: #4CAF50;
-    color: #fff;
-    position: relative;
-    top: 110px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3e8e41;
-}
-
-a {
-    text-decoration: none;
-}
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* List Styles */
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 600px) {
+    .main {
+      margin: 20px;
+    }
+  }
